@@ -1,0 +1,16 @@
+body {
+    color: #635959;
+}
+header {
+    background-color: #242323;
+    color: #EFEFEF;
+}
+h3, article > h4 {
+    color: #8C1018
+}
+article > a {
+    color: #314052;
+}
+header > h1 {
+    font-size: 4em;
+}
