@@ -1,19 +1,23 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang='en-US'>
     <head>
         <title>HTML Page</title>
     </head>
     <body>
-        <header id="headerItem">
+        <header id='headerItem'>
             Old Header
         </header>
         <section>
-            <button>Click Here</button>
+            <button onclick='clickHandler()'>Click Here</button>
         </section>
         <script type="text/javascript">
-        function startlogic() {
-            var newHTML = "<em>New Header</em>";
-            document.getElementById("headerItem").innerHTML= newHTML;
+        function startLogic() {
+            var newHTML = '<em>New Header</em>';
+            document.getElementById('headerItem').innerHTML = newHTML;
+            } 
+            startLogic();
+        function clickHandler() {
+            alert('You clicked me!');
         }
         </script>
     </body>
