@@ -36,3 +36,17 @@ header {
 main {
     padding: 5px 10px;
 }
+@font-face {
+    font-family: "News Cycle";
+    src: url("../fonts/mod3_news_cycle.ttf") format("truetype");
+}
+@font-face {
+    font-family: "Contail One";
+    src: url("../fonts/mod3_contrail_one.ttf") format("truetype")
+}
+body {
+    font-family: "News Cycle";
+}
+header {
+    font-family:"Contail One";
+}
