@@ -30,3 +30,9 @@ article > time {
 main > h3 {
     font-size: 2em;
 }
+header {
+    padding: 20px 50px;
+}
+main {
+    padding: 5px 10px;
+}
