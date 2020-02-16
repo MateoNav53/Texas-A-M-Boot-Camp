@@ -1,8 +1,8 @@
 @font-face {
-    font-family: Chonburi;
-    src: url("../fonts/chonburi.ttf")
+    font-family: Itim;
+    src: url("../fonts/itim.ttf")
     format("truetype");
 }
 body {
-    font-family: Chonburi;
+    font-family: Itim;
 }
