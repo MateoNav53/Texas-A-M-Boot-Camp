@@ -8,5 +8,5 @@ function doMore() {
     alert('I could process more logic here');
 }
 function doSomethingElse() {
-    document.writeIn('Test Message');
+    document.writeln('Test Message');
 }
