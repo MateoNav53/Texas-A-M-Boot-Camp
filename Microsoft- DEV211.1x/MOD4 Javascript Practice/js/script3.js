@@ -1,5 +1,5 @@
-var testVariable;
-var isUndefined = (testVariable ===undefined);
+var testVariable = null;
+var isUndefined = (testVariable === undefined);
 var isNull = (testVariable === null);
 var isEmpty = (testVariable === '');
 document.getElementById('isUndefined').innerHTML = isUndefined;
