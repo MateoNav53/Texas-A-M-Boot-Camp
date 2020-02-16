@@ -1,7 +1,8 @@
 @font-face {
-    font-family: Caveat;
-    src: url("../fonts/caveat.ttf") format("truetype");
+    font-family: Chonburi;
+    src: url("../fonts/chonburi.ttf.ttf")
+    format("truetype");
 }
 body {
-    font-family: Caveat;
+    font-family: Chonburi;
 }
