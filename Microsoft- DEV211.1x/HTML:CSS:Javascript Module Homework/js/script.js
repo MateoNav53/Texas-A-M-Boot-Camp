@@ -21,3 +21,4 @@ function startPlayback() {
     setTimeout(moveForward, slideInterval);
 }
 startPlayback();
+//Image carousel isn't working
