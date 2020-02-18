@@ -8,4 +8,3 @@ function startWorker() {
 function stopWorker() {
     worker.terminate();
 }
-//is the worker.js file not being linked?
