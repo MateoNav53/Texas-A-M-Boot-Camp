@@ -5,20 +5,40 @@ function getFigures() {
 function moveForward() {
     var pointer;
     var figures = getFigures();
+    /*
     for (var i = 0; i < figures.length; i++) {
-        if (figures[i].className = "visible") {
+        if (figures[i].className === "visible") {
             figures[i].className = "";
             pointer = i;
         }
     }
+    */
+
+    for (var i = 0; i < figures.length; i++) {
+        if ( figures[i].classList.contains("visible") ) {
+            figures[i].classList.remove("visible");
+            pointer = i;
+        }
+    }
+
+
+    /*
     if (++pointer == figures.length) {
         pointer = 0;
     }
-    figures[pointer].className = "visible";
-    setTimeout(moveForward, slideInterval);
+    */
+    // pointer = (pointer + 1) % figures.length;
+
+    pointer += 1;  // pointer = pointer + 1;
+    if ( pointer === figures.length ) {
+        pointer = 0; 
+    }
+
+    figures[pointer].classList.add("visible");
 }
+
 function startPlayback() {
-    setTimeout(moveForward, slideInterval);
+    setInterval(moveForward, slideInterval);
 }
 startPlayback();
 //Image carousel isn't working
