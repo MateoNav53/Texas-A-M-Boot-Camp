@@ -1,12 +1,9 @@
 function makeRequests() {
-    $.get({
-        url: 'http://httpbin.org/user-agent',
-        dataType: 'json'
-    })
+    $.getJSON('http://httpbin.org/ip')
         .done(function(response) {
             alert(JSON.stringify(response));
             $('body > p').text(
-                response['user-agent']
+                response.origin
             );
         });
 }
