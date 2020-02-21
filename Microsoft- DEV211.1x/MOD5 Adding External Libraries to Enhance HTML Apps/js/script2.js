@@ -1,17 +1,13 @@
 function makeRequests() {
-    $.ajax({
-        url: 'http://httpbin.org/get',
-        method: 'GET',
+    $.get({
+        url: 'http://httpbin.org/user-agent',
         dataType: 'json'
     })
         .done(function(response) {
+            alert(JSON.stringify(response));
             $('body > p').text(
-                JSON.stringify(response)
+                response['user-agent']
             );
-        })
-    
-        .fail(function() {
-            alert('An error has occured')
         });
 }
 $(document).ready(function () {
