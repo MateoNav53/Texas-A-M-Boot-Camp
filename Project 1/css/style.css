@@ -1,4 +1,11 @@
 body {
     text-align: center;
     font-family: Tahoma;
+    background-color:#f1d4a7
+}
+header {
+    background-color: #b85b25;
+}
+.italic {
+    font-style:italic;
 }
