@@ -1,7 +1,5 @@
 body {
-    text-align: center;
     font-family: Tahoma;
-    background-color:#f1d4a7
 }
 header {
     background-color: #b85b25;
@@ -9,15 +7,38 @@ header {
     border-style:solid;
     border-width:medium;
     border-color:black;
-
-}
-.italic {
-    font-style:italic;
+    text-align: center;
 }
 time {
     font-size:small;
 }
-img {
-    width:35%;
+img.profilepic {
+    float:left;
+    width:10%;
+}
+img.leftarticlepic {
+    float:left;
+    width:15%;
     height:auto;
+    border-style:solid;
+    border-width:thin;
+    border-color:black;
+}
+img.rightarticlepic {
+    float:right;
+    width:15%;
+    height:auto;
+    border-style:solid;
+    border-width:thin;
+    border-color:black;
+    position:relative;
+    top:-3px
+}
+p.righttext {
+    font-style:italic;
+    text-align:right;
+}
+p.lefttext {
+    font-style:italic;
+    text-align:left;
 }
