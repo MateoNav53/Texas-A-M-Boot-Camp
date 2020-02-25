@@ -24,7 +24,7 @@ img.kobepic {
     border-width:thin;
     border-color:black;
 }
-img.bronwadepic {
+#bronwadepic {
     float:right;
     width:15%;
     height:auto;
@@ -32,7 +32,17 @@ img.bronwadepic {
     border-width:thin;
     border-color:black;
     position:relative;
-    top:-30px;
+    top:-25px;
+}
+#dinwiddiepic {
+    float:right;
+    width:15%;
+    height:auto;
+    border-style:solid;
+    border-width:thin;
+    border-color:black;
+    position:relative;
+    top:-20px;
 }
 .righttext {
     font-style:italic;
