@@ -9,9 +9,6 @@ header {
     border-color:black;
     text-align: center;
 }
-time {
-    font-size:small;
-}
 img.profilepic {
     float:left;
     width:10%;
@@ -51,6 +48,14 @@ img.profilepic {
     border-color:black;
     position:relative;
     top:-20px;
+}
+#kobebronpic {
+    float:left;
+    width:21%;
+    height:auto;
+    border-style:solid;
+    border-width:medium;
+    border-color:black;
 }
 .righttext {
     font-style:italic;
