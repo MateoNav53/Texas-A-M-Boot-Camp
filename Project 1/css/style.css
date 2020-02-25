@@ -76,10 +76,11 @@ img.profilepic {
     width:15%;
     height:auto;
     border-style:solid;
-    border-width:medium;
+    border-width:thin;
     border-color:black;
     position:relative;
     right:13px;
+    bottom:5px;
 }
 .righttext {
     font-style:italic;
