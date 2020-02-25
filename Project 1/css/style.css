@@ -1,5 +1,10 @@
+@font-face {
+    font-family: "Lato Regular";
+    src:url(/fonts/Lato-Regular2.ttf) format("truetype");
+}
+
 body {
-    font-family: Tahoma;
+    font-family: 'Lato Regular', Arial, sans-serif;
 }
 header {
     background-color: #b85b25;
@@ -8,6 +13,14 @@ header {
     border-width:medium;
     border-color:black;
     text-align: center;
+}
+header h1 {
+    position:relative;
+    right:70px;
+}
+header h2 {
+    position:relative;
+    right:70px;
 }
 img.profilepic {
     float:left;
@@ -81,6 +94,15 @@ img.profilepic {
     position:relative;
     right:13px;
     bottom:5px;
+}
+#bio {
+    text-align: center;
+    background-color:#b85b25;
+    margin:2%;
+    border-style:solid;
+    border-width:medium;
+    border-color:black;
+
 }
 .righttext {
     font-style:italic;
