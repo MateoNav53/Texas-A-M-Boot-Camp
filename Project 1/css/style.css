@@ -16,7 +16,7 @@ img.profilepic {
     float:left;
     width:10%;
 }
-img.leftarticlepic {
+img.kobepic {
     float:left;
     width:15%;
     height:auto;
@@ -24,7 +24,7 @@ img.leftarticlepic {
     border-width:thin;
     border-color:black;
 }
-img.rightarticlepic {
+img.bronwadepic {
     float:right;
     width:15%;
     height:auto;
@@ -34,11 +34,21 @@ img.rightarticlepic {
     position:relative;
     top:-30px;
 }
-p.righttext {
+.righttext {
     font-style:italic;
     text-align:right;
 }
-p.lefttext {
+.lefttext {
     font-style:italic;
     text-align:left;
+}
+.rightdate {
+    text-align:right;
+    font-style:italic;
+    font-size:small;
+}
+.leftdate {
+    text-align:left;
+    font-style:italic;
+    font-size:small;
 }
