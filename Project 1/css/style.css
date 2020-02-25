@@ -56,6 +56,30 @@ img.profilepic {
     border-style:solid;
     border-width:medium;
     border-color:black;
+    position:relative;
+    right:10px;
+}
+#indiagames {
+    float:right;
+    width:21%;
+    height:auto;
+    border-style:solid;
+    border-width:thin;
+    border-color:black;
+    position:relative;
+    top:-23px;
+    left:10px;
+
+}
+#magic {
+    float:left;
+    width:15%;
+    height:auto;
+    border-style:solid;
+    border-width:medium;
+    border-color:black;
+    position:relative;
+    right:13px;
 }
 .righttext {
     font-style:italic;
