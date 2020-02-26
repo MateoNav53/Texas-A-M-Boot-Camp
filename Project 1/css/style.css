@@ -1,6 +1,6 @@
 @font-face {
     font-family: "Lato Regular";
-    src:url(/fonts/Lato-Regular2.ttf) format("truetype");
+    src:url(../fonts/Lato-Regular2.ttf) format("truetype");
 }
 
 body {
@@ -22,7 +22,7 @@ header h2 {
     position:relative;
     right:70px;
 }
-img.profilepic {
+#profilepic {
     float:left;
     width:10%;
 }
