@@ -14,17 +14,32 @@ header {
     border-color:black;
     text-align: center;
 }
-header h1 {
+.divider {
+    border-style:solid;
+    border-width:medium;
+    border-color:grey;
+}
+#mainpageh1 {
     position:relative;
     right:70px;
 }
-header h2 {
+#mainpageh2 {
     position:relative;
     right:70px;
 }
 #profilepic {
     float:left;
     width:10%;
+}
+#biopic {
+    border-style:solid;
+    border-color:black;
+    border-width: medium;
+
+}
+.navbar {
+    padding:20px 10px;
+    margin:35px;
 }
 #kobepic {
     float:left;
@@ -97,12 +112,13 @@ header h2 {
 }
 #bio {
     text-align: center;
+
+}
+#bio header {
     background-color:#b85b25;
-    margin:2%;
     border-style:solid;
     border-width:medium;
     border-color:black;
-
 }
 .righttext {
     font-style:italic;
