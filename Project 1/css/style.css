@@ -120,6 +120,15 @@ header {
     border-width:medium;
     border-color:black;
 }
+#contact {
+    text-align:center;
+}
+#contact header {
+    background-color:#b85b25;
+    border-style:solid;
+    border-width:medium;
+    border-color:black;
+}
 .righttext {
     font-style:italic;
     text-align:right;
