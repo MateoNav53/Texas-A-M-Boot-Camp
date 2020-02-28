@@ -29,7 +29,8 @@ header {
 }
 #profilepic {
     float:left;
-    width:10%;
+    max-width:130px;
+    max-height:auto;
 }
 #biopic {
     border-style:solid;
@@ -43,7 +44,8 @@ header {
 }
 #kobepic {
     float:left;
-    width:15%;
+    max-width:150px;
+    max-height:auto;
     height:auto;
     border-style:solid;
     border-width:medium;
@@ -51,64 +53,57 @@ header {
 }
 #bronwadepic {
     float:right;
-    width:16%;
-    height:auto;
+    max-width:170px;
+    max-height:auto;
     border-style:solid;
     border-width:medium;
     border-color:black;
-    position:relative;
-    top:-25px;
+
 }
 #restpic {
     float:left;
-    width:17%;
-    height:auto;
+    max-width:150px;
+    max-height:auto;
     border-style:solid;
     border-width:medium;
     border-color:black;
 }
 #dinwiddiepic {
     float:right;
-    width:18%;
-    height:auto;
+    max-width:180px;
+    max-height:auto;
     border-style:solid;
     border-width:medium;
     border-color:black;
-    position:relative;
-    top:-20px;
+
 }
 #kobebronpic {
     float:left;
-    width:21%;
-    height:auto;
+    max-width:200px;
+    max-height:auto;
     border-style:solid;
     border-width:medium;
     border-color:black;
-    position:relative;
-    right:10px;
+
 }
 #indiagames {
     float:right;
-    width:21%;
-    height:auto;
+    max-width:190px;
+    max-height:auto;
     border-style:solid;
     border-width:thin;
     border-color:black;
-    position:relative;
-    top:-23px;
-    left:10px;
+
 
 }
 #magic {
     float:left;
-    width:16%;
-    height:auto;
+    max-width:175px;
+    max-height:auto;
     border-style:solid;
     border-width:thin;
     border-color:black;
-    position:relative;
-    right:13px;
-    bottom:5px;
+
 }
 #bio {
     text-align: center;
@@ -119,6 +114,14 @@ header {
     border-style:solid;
     border-width:medium;
     border-color:black;
+}
+#biopic {
+    float:left;
+    max-width:200px;
+    max-height:auto;
+}
+#bio p {
+    font-size:20px;
 }
 #contact {
     text-align:center;
