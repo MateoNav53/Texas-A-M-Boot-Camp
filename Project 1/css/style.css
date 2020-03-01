@@ -44,9 +44,14 @@ header {
 .row1 .navbar {
     padding:1rem;
     text-decoration:none;
+    color:#39CCCC;
+    padding:14px 25px;
+}
+.row1 .navbar:hover {
+    color:#001f3f;
+    background-color:#AAAAAA;
 }
 #kobepic {
-
     border-style:solid;
     border-width:medium;
     border-color:black;
@@ -114,6 +119,11 @@ header {
 #contact {
     text-align:center;
 }
+#contact p {
+    display:flex;
+    flex-direction:column;
+    font-size:40px
+}
 .rightheadline {
     text-align:right;
 }
@@ -137,4 +147,24 @@ header {
     text-align:left;
     font-style:italic;
     font-size:small;
+}
+.container {
+    display:flex;
+    padding:.5em;
+}
+.column {
+    flex:50%;
+    display:block;
+    padding:1.5em;
+    /*border-style:solid;
+    border-width:thin;*/
+}
+label {
+    font-size:20px;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-evenly;
+    align-items:center;
+    padding:.5em;
+    margin:1em;
 }
