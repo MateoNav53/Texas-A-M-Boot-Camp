@@ -6,18 +6,26 @@
     </head>
     <body id="contact">
         <header>
-            <div>
+            <div class="row1">
                 <a class="navbar" href="Project_1.html">Articles</a>
                 <a class="navbar" href="Bio.html">Biography</a>
                 <a class="navbar" href="contact.html">Contact</a>
             </div>
-            <h1>Mateo Navarrette</h1>
-            <h2>NBA Writer</h2>
-            <h3>Contact</h3>
-            <div>
+            <h1 class="row2">Mateo Navarrette, NBA Writer</h1>
+            <div class="row3">
                 <a href="https://twitter.com/MateoNav53?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false" data-button="grey">Follow Mateo</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
             </div>
         </header>
-
+            <div class="container">
+                <p class="column">
+                    Want to work with Mateo via writing or podcasting? Want to just talk some hoops? Reach out here!
+                </p>
+                <form class="column" action="https://formspree.io/mayjdpyn" method="POST">
+                    <label>Name<input type="text" name="name"></label>
+                    <label>Email<input type="email" name="_replyto"></label>
+                    <label>Message<textarea rows="10" cols="50" name="message"></textarea></label>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
     </body>
 </html>
