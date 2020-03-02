@@ -14,15 +14,14 @@ header {
 }
 .row1 {
     display:flex;
-    justify-content:flex-end;
-    
+    justify-content:flex-start;
+    background-color:#001f3f;
 }
 .row2 {
     display:flex;
     justify-content:center;
-
+    color:#39CCCC;
 }
-
 .row3 {
     display:flex;
     justify-content:center;
@@ -37,10 +36,6 @@ header {
     border-width:medium;
     border-color:grey;
 }
-#biopic {
-    max-width:100px;
-    max-height:auto
-}
 .row1 .navbar {
     padding:1rem;
     text-decoration:none;
@@ -49,6 +44,10 @@ header {
 }
 .row1 .navbar:hover {
     color:#001f3f;
+    background-color:#AAAAAA;
+}
+
+.row1 .navbar .current {
     background-color:#AAAAAA;
 }
 #kobepic {
@@ -108,13 +107,23 @@ header {
     text-align: center;
 
 }
+.biocontainer {
+    display:flex;
+    justify-content:space-between;
+    padding:2em;
+
+}
+
 #biopic {
-    float:left;
-    max-width:200px;
-    max-height:auto;
+    display:flex;
+    padding-bottom:1em;
 }
 #bio p {
-    font-size:20px;
+    font-size:28px;
+}
+.biotext {
+    display:flex;
+    flex-direction:column;
 }
 #contact {
     text-align:center;
@@ -123,6 +132,10 @@ header {
     display:flex;
     flex-direction:column;
     font-size:40px
+}
+.contacttext {
+    display:flex;
+    flex-direction:column;
 }
 .rightheadline {
     text-align:right;
