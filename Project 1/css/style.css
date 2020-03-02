@@ -15,12 +15,12 @@ header {
 .row1 {
     display:flex;
     justify-content:flex-start;
-    background-color:#001f3f;
+    background-color:#07393C;
 }
 .row2 {
     display:flex;
     justify-content:center;
-    color:#39CCCC;
+    color:navy;
 }
 .row3 {
     display:flex;
@@ -36,25 +36,25 @@ header {
     border-width:medium;
     border-color:grey;
 }
-.row1 .navbar {
+.row1 a {
     padding:1rem;
     text-decoration:none;
     color:#39CCCC;
     padding:14px 25px;
 }
-.row1 .navbar:hover {
+.row1 a:hover {
     color:#001f3f;
     background-color:#AAAAAA;
 }
 
-.row1 .navbar .current {
-    background-color:#AAAAAA;
+.current {
+    background-color:navy
 }
-#kobepic {
+/*#kobepic {
     border-style:solid;
     border-width:medium;
     border-color:black;
-}
+}*/
 #bronwadepic {
     float:right;
     max-width:170px;
@@ -113,7 +113,6 @@ header {
     padding:2em;
 
 }
-
 #biopic {
     display:flex;
     padding-bottom:1em;
@@ -169,8 +168,6 @@ header {
     flex:50%;
     display:block;
     padding:1.5em;
-    /*border-style:solid;
-    border-width:thin;*/
 }
 label {
     font-size:20px;
@@ -180,4 +177,30 @@ label {
     align-items:center;
     padding:.5em;
     margin:1em;
+}
+.artcontainer {
+    display:flex;
+    padding:1em;
+    flex:50%;
+}
+.pic {
+    display:block;
+
+}
+.text {
+    display:flex;
+    flex-direction:column;
+}
+.date {
+    font-style:italic;
+    font-size:14px;
+}
+.article-snippet {
+    font-size: large;
+    width:80%;
+    display:flex;
+    flex-direction:column;
+    padding:.5em;
+    margin:1em;
+    justify-content:space-evenly;
 }
