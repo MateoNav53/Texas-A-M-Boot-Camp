@@ -58,8 +58,11 @@ header {
     padding:1em;
 }
 .text {
+    padding-top:2em;
     display:flex;
     flex-direction:column;
+    justify-content:space-evenly;
+    align-items:center;
 }
 .date {
     font-style:italic;
@@ -75,13 +78,17 @@ header {
     align-items:center;
 }
 .article-links {
-    color:rgb(239, 241, 114);
-    background-color:rgb(43, 40, 40);
+    color:#eff172;
+    background-color:#2b2828;
     padding:.5em;
     margin:1em;
 }
 .article-links:link {
     text-decoration:none;
+}
+.article-links:hover {
+    color:#001f3f;
+    background-color:#AAAAAA;
 }
 .kobepic {
     border-style:solid;
@@ -107,15 +114,13 @@ header {
     border-color:black;
 }
 .kobebronpic {
-    max-height:300px;
-    max-width:auto;
     border-style:solid;
     border-width:thin;
     border-color:black;
+    margin-bottom:2em;
 }
 .indiapic {
-    max-width:600px;
-    max-height:auto;
+
     border-style:solid;
     border-width:thin;
     border-color:black;
@@ -153,9 +158,14 @@ header {
     display:flex;
     flex-direction:column;
 }
-.biotext a:link {
+.bio-link {
+    color:#CC2936
+}
+.bio-link:link {
     text-decoration:none;
-    
+}
+.bio-link:hover {
+    color:#0D3B66
 }
 #contact {
     text-align:center;
