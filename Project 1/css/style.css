@@ -67,12 +67,21 @@ header {
 }
 .article-snippet {
     font-size: large;
-    width:80%;
     display:flex;
     flex-direction:column;
     padding:.5em;
     margin:1em;
-    justify-content:space-between;
+    justify-content:center;
+    align-items:center;
+}
+.article-links {
+    color:rgb(239, 241, 114);
+    background-color:rgb(43, 40, 40);
+    padding:.5em;
+    margin:1em;
+}
+.article-links:link {
+    text-decoration:none;
 }
 .kobepic {
     border-style:solid;
@@ -98,21 +107,31 @@ header {
     border-color:black;
 }
 .kobebronpic {
-    max-width:100%;
-    max-height:auto;
+    max-height:300px;
+    max-width:auto;
     border-style:solid;
     border-width:thin;
     border-color:black;
 }
 .indiapic {
+    max-width:600px;
+    max-height:auto;
     border-style:solid;
     border-width:thin;
     border-color:black;
 }
 .magic {
+    max-width:600px;
+    max-height:auto;
     border-style:solid;
     border-width:thin;
     border-color:black;
+}
+.image-container {
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
 }
 #bio {
     text-align: center;
@@ -191,12 +210,20 @@ label {
         max-width:100%;
         max-height:auto;
     }
+    .bronwadepic {
+        max-width:100%;
+        max-height:auto;
+    }
     .restpic {
         max-width:100%;
         max-height:auto;
     }
     .dinwiddiepic {
         max-width:100%;
+        max-height:auto;
+    }
+    .kobebronpic {
+        max-width: 100%;
         max-height:auto;
     }
     .indiapic {
@@ -206,6 +233,10 @@ label {
     .magic {
         max-width:100%;
         max-height:auto;
+    }
+    .image-container {
+        display:flex;
+        flex-direction:center;
     }
     
     .biocontainer {
