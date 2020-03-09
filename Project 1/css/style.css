@@ -199,8 +199,11 @@ label {
 .email {
     width:315px;
 }
-.button {
-    border-radius:8px;
+.signup-button {
+    border-radius:4px;
+}
+.submit-button {
+    border-radius:4px;
 }
 .modal-bg {
     width:100%;
@@ -211,18 +214,31 @@ label {
     display:flex;
     justify-content:center;
     align-items:center;
+    display:none;
 }
 .signup-window {
     width:500px;
     height:300px;
-    background-color:rgb(228, 236, 240);
+    background-color:#40bd8b;
     border-radius:8px;
     padding:1em;
+    position:relative;
 }
 .signup-window input {
     width:40%;
     display:block;
     margin:2em auto;
+}
+.signup-window p {
+    padding-bottom:.75em;
+}
+.close-button {
+    position:absolute;
+    top:0;
+    right:14px;
+    font-size:38px;
+    transform:rotate(45deg);
+    cursor:pointer;
 }
 @media (max-width: 1100px) {
     .right-article-container {
