@@ -3,6 +3,7 @@
     <head>
         <title>Mateo Navarrette Contact</title>
         <link rel="stylesheet" type="text/css" href="css/style.css" />
+        <script type="text/javascript" src="js/script.js"></script>
     </head>
     <body id="contact">
         <header>
@@ -22,17 +23,18 @@
                     <p>Want to just talk some hoops?</p>
                     <p>Reach out here!</p>
                     <p>Or, sign up for his upcoming newsletter</p>
-                    <button class="button" type="button">Sign Up</button>
+                    <button type="button" id="signup-button" class="newsletter-button">Sign Up</button>
                 </section>
                 <form class="column" action="https://formspree.io/mayjdpyn" method="POST">
                     <label><input class="name" type="text" name="name" placeholder="Name" required></label>
                     <label><input class="email" type="email" name="_replyto" placeholder="Email" required></label>
                     <label><textarea rows="10" cols="50" name="message" placeholder="Message" required></textarea></label>
-                    <button class="button" type="submit">Submit</button>
+                    <button class="submit-button" type="submit">Submit</button>
                 </form>
             </div>
             <div class="modal-bg">
                 <div class="signup-window">
+                    <div class="close-button">+</div>
                     <p>Get all of Mateo's latest content in your inbox by filling out the form below</p>
                     <form>
                         <input type="text" name="name" placeholder="Name" required>
