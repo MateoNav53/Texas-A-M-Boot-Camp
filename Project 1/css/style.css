@@ -181,17 +181,23 @@ header {
 }
 .column {
     flex:50%;
-    display:block;
     padding:1.5em;
 }
 label {
-    font-size:20px;
+    font-size:15px;
     display:flex;
     flex-direction:column;
     justify-content:space-evenly;
     align-items:center;
-    padding:.5em;
-    margin:1em;
+    padding:1em;
+    margin:.25em;
+}
+.name {
+    width:315px;
+    margin-top:2em;
+}
+.email {
+    width:315px;
 }
 @media (max-width: 1100px) {
     .right-article-container {
