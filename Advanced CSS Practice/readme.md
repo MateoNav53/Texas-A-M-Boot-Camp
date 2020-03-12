@@ -1,0 +1,1 @@
+These are practice exercises/lab assignments given by EDX Advanced CSS course, DEV218x
