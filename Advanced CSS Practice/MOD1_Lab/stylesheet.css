@@ -1,0 +1,19 @@
+/*Reset Styles */
+@import 'normalize.css';
+/*Change all elements to use border-box*/
+html {
+    box-sizing:border-box;
+}
+*, *:before, *:after {
+    box-sizing:inherit;
+}
+/*Theme Styles*/
+.background-primary {
+    background: #F7941E; /*Orange*/
+}
+.background-secondary {
+    background: #00AEEF; /*Blue*/
+}
+.background-tertiary {
+    background: #8DC63F; /*Green*/
+}
