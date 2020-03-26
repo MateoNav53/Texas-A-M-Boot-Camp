@@ -443,7 +443,7 @@ h1, h2, h3 {
 }
 
 a {
-  color: #8dc63f;
+  color: #8DC63F;
   font-weight: bold;
 }
 
@@ -570,6 +570,9 @@ Button Modules
   color: white;
 }
 
+/* 768px / 16px = 48em */
+/* Extra Small Only */
+/* Small Devices, Tablets */
 /***************************
 Header
 ***************************/
@@ -580,6 +583,22 @@ Header
   padding-bottom: 18px;
 }
 
+@media only screen and (min-width: 48em) {
+  .header-primary {
+    position: absolute;
+    z-index: 99;
+    width: 100%;
+  }
+  .header-primary:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+/* 768px / 16px = 48em */
+/* Extra Small Only */
+/* Small Devices, Tablets */
 /***************************
 Hero Modules
 ***************************/
@@ -592,6 +611,12 @@ Hero Modules
   color: white;
   padding-top: 25px;
   padding-bottom: 25px;
+}
+
+@media only screen and (min-width: 48em) {
+  .hero-primary {
+    padding-top: 150px;
+  }
 }
 
 .hero-primary.bg-image > img {
@@ -619,6 +644,9 @@ Hero Modules
   margin-top: 25px;
 }
 
+/* 768px / 16px = 48em */
+/* Extra Small Only */
+/* Small Devices, Tablets */
 /***************************
 Logo Modules
 ***************************/
@@ -665,6 +693,9 @@ Media Modules
   display: block;
 }
 
+/* 768px / 16px = 48em */
+/* Extra Small Only */
+/* Small Devices, Tablets */
 /***************************
 Nav Modules
 ***************************/
@@ -676,6 +707,65 @@ Nav Modules
 
 .nav-primary {
   margin-top: 28px;
+}
+
+@media only screen and (min-width: 48em) {
+  .nav-primary {
+    float: right;
+    width: 60%;
+    text-align: right;
+    margin-top: 0px;
+  }
+  .nav-primary li {
+    display: inline-block;
+  }
+}
+
+/* 768px / 16px = 48em */
+/* Extra Small Only */
+/* Small Devices, Tablets */
+.frame {
+  overflow: hidden;
+}
+
+.frame-primary {
+  width: 200px;
+  height: 200px;
+  border-radius: 100px;
+  margin: 25px auto 40px auto;
+}
+
+.frame-primary img {
+  width: 100%;
+}
+
+@media only screen and (min-width: 48em) {
+  .frame-primary {
+    width: 355px;
+    height: 355px;
+    border-radius: 177.5px;
+    position: relative;
+    top: -30px;
+    margin: 0 auto 63px auto;
+  }
+}
+
+.mask {
+  position: relative;
+}
+
+.mask:before {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  content: "";
+}
+
+.mask-primary:before {
+  background: #F7941E;
+  opacity: 0.6;
 }
 
 /***************************

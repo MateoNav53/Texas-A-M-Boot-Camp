@@ -1,3 +1,6 @@
+/* 768px / 16px = 48em */
+/* Extra Small Only */
+/* Small Devices, Tablets */
 /***************************
 Header
 ***************************/
@@ -6,4 +9,17 @@ Header
   text-align: center;
   padding-top: 18px;
   padding-bottom: 18px;
+}
+
+@media only screen and (min-width: 48em) {
+  .header-primary {
+    position: absolute;
+    z-index: 99;
+    width: 100%;
+  }
+  .header-primary:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
 }
