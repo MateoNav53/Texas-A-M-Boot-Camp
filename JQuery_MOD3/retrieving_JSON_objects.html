@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <title>Using JQuery.get</title>
+        <meta charset="UTF-8" />
+    </head>
+    <body>
+        <div>
+            <input type="text" id="data" class="form-control" />
+            <button type="button" class="btn" id="execute">Load data</button>
+        </div>
+        <div id="output"></div>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js" type="text/javascript"></script>
+        <script>
+            $(function () {
+                $('#execute').click(function () {
+                    //api/Demo (no parameters) returns a Person object
+                    //firstName and lastName prperties
+                    $.getJSON('/api/Ddemo', function (person) {
+                        $('#first-name').val(person.firstName);
+                        $('#last-name').val(person.lastName);
+                    })
+                })
+            })
+                
+
+        </script>
+    </body>
+</html>
