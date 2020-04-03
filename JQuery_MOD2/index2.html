@@ -52,25 +52,35 @@
     <script>
         // your answer would go here
         $(document).ready (function() {
+            //create variable to grab hold of circles so we can change as we please
             var maxValue = $('#rating-container').attr('max-value');
-            addRatingCircle(maxValue);
+            
+            // append the rating cirlces to the rating container
+            appendRatingCircle(maxValue);
+
+            //when button is clicked, new max value is caught
+            //defining a new max value to the rate system
             $('#update-max-value').click(function () {
                 var newMaxValue = $('#max-value').val();
                 maxValue = newMaxValue;
-                addRatingCircle(maxValue);
+                appendRatingCircle(maxValue);
             });
+            //make rating circles highlighted
             $('#rating-container').delegate('.rating-circle', 'mouseenter', function () {
                 $(this).addClass('rating-hover').prevAll().addClass('rating-hover');
             });
+            //remove the highlight on rating circles when mouseout
             $('#rating-container').delegate('.rating-circle', 'mouseout', function () {
                 $('.rating-circle').removeClass('rating-hover');
             })
+            //apply green rating-chosen class when circles are clicked
             $('#rating-container').delegate('.rating-circle', 'click', function () {
                 $('.rating-circle').removeClass('rating-chosen');
                 $(this).addClass('rating-chosen').prevAll().addClass('rating-chosen');
             });
         });
-        function addRatingCircle(maxValue) {
+        //function that makes append rating circles reusable
+        function appendRatingCircle(maxValue) {
             $('#rating-container').empty();
             for (var i = 0; i < maxValue; i++) {
                 $('#rating-container').append('<div class="rating-circle"></div>');
