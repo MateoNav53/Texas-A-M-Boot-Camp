@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" crossorigin="anonymous"></script>
+    <style>
+        body {
+            font-family: Verdana;
+        }
+
+        h1,
+        h2,
+        h3 {
+            color: darkblue;
+        }
+
+        .rating-circle {
+            height: 2em;
+            width: 2em;
+            border: .1em solid black;
+            border-radius: 1.1em;
+            display: inline-block;
+            margin: 0;
+            padding: .1em;
+        }
+
+        .rating-hover {
+            background-color: yellow;
+        }
+
+        .rating-chosen {
+            background-color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Contoso Web Developer Conference</h1>
+    <h2>Finding elements using jQuery</h2>
+    <div>This session is about identifying elements using jQuery methods and selectors.</div>
+    <h3>Rate this session</h3>
+    <div id="rating-container">
+
+    </div>
+
+    <div id="rating-container" max-value="5"></div>
+
+    <div>
+        <label for="max-value">Enter max value:</label>
+        <input type="text" id="max-value" />
+        <button type="button" id="update-max-value">Update max value</button>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+    <script>
+        //Update Max Value
+        $(document).ready(function () {
+
+            addCircles(5);
+
+            function circleMouseEnterCallback(event) {
+                $(event.target)
+                    .addClass("rating-hover")
+                    .prevAll()
+                    .addClass("rating-hover");
+            }
+
+            function circleMouseOutCallback(event) {
+                $(event.target)
+                    .removeClass("rating-hover")
+                    .prevAll()
+                    .removeClass("rating-hover");
+            }
+
+            function ratingCircleClickHandler(event) {
+                $(event.target)
+                    .addClass("rating-chosen")
+                    .prevAll()
+                    .addClass("rating-chosen")
+                    .removeClass("rating-hover")
+                    .prevAll()
+                    .removeClass("rating-hover");
+            }
+
+            function containerMouseEnterCallback(event) {
+                $(event.target)
+                    .children()
+                    .removeClass("rating-chosen");
+            }
+
+            function addCircles(userInput) {
+                for (var i = 0; i < userInput; i++) {
+                    $("#rating-container").append('<div class="rating-circle"></div>');
+                }
+
+                $(".rating-circle").mouseenter(circleMouseEnterCallback);
+                $(".rating-circle").mouseout(circleMouseOutCallback);
+                $(".rating-circle").click(ratingCircleClickHandler);
+                $("#rating-container").mouseenter(containerMouseEnterCallback);
+            }
+
+            function updateMaxValueHandler() {
+                var userInput = parseInt($("#max-value").val());
+                $("#rating-container").empty();
+                addCircles(userInput);
+            }
+
+            $("#update-max-value").click(updateMaxValueHandler);
+
+            function saveCallback() {
+
+                const url = "https://jquery-edx.azurewebsites.net/api/Rating";
+                const payload = {
+                    value: $("#rating-container .rating-chosen").length,
+                    maxValue: $("#rating-container .rating-circle").length
+                };
+
+                $.post(url, payload)
+                    .done(data => alert(data.message));
+            }
+
+            $("#save-rating").click(saveCallback);
+        });
+    </script>
+
+    </script>
+</body>
+
+</html>
