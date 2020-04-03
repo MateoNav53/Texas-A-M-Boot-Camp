@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <title>Using Promises</title>
+        <meta charset="utf-8" />
+    </head>
+    <body>
+        <div id="output">Click Button to run the script</div>
+        <div>
+            <button class="btn" id="executor">Run script</button>
+        </div>
+        <div class="box">Sample Content</div>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script>
+            $(function () {
+                $('#executor').click(function() {
+                    //hide runs asynchronously
+                    //the next line of code runs immediately
+                    $('.box').hide(1000).promise().done(function () {
+                    //This code will now run after the hide is complete
+                    $('#output').text('Box is now hidden');
+                    });
+                });
+            });
+        </script>
+        <script src="js/script.js"></script>
+    </body>
+</html>
