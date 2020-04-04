@@ -31,6 +31,12 @@
                 
                 });
             });
+            //use this to take a button away from someone
+            $(document).ajaxSend(function () {
+                $('#execute').attr('disabled', 'disabled');
+            }).ajaxComplete(function () {
+                $('#execute').removeAttr('disabled');
+            })
         </script>
     </body>
 </html>
