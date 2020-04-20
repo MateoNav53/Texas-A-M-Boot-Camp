@@ -82,7 +82,7 @@
                     $('#output').text(response.message);
                 })*/
                 
-                // Way to call server and receive an error message if failed to receive a response from them b/c not functioning
+                // Way to call server and receive an error message if failed to receive a response from them b/c server not functioning
                 $.post('http://jquery-edx.azurewebsites.net/api/Rating', data)
                  .done( function( response) {
                     $('#output').text(response.message);
